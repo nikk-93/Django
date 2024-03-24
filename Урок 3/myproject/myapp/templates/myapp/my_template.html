@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Товары за {{ show_step }} дней</title>
+</head>
+
+<body>
+    <h3>Товары за {{ show_step }} дней</h3>
+    {% for product in products %}
+    <div>
+        {{ forloop.counter }}. {{ product }}
+    </div>
+    {% endfor %}
+</body>
+
+</html>
